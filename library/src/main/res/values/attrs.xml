@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StickyBubbleView">
+        <!-- 拖拽粘性路径颜色 -->
+        <attr name="sbvPathColor" format="color" />
+        <!-- 可拖拽背景 -->
+        <attr name="sbvBackground" format="reference" />
+        <attr name="sbvTextColor" format="color" />
+        <attr name="sbvTextSize" format="dimension" />
+    </declare-styleable>
+</resources>
