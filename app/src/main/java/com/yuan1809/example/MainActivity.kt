@@ -14,12 +14,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var animatorFactory:AnimatorFactory
+     private val animatorFactory:AnimatorFactory by lazy {
+         AnimatorFactory()
+     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        animatorFactory = AnimatorFactory();
         recycle_view.layoutManager = LinearLayoutManager(this)
         recycle_view.adapter = RecyclerAdapter(applicationContext, animatorFactory)
     }
@@ -32,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
             var viewHolder = (holder as ViewHolder)
             viewHolder.stickyBubbleView.setStickyListener{
-                viewHolder.stickyBubbleView.setText("0");
+                //do something on onDisappear
+                viewHolder.stickyBubbleView.visibility = View.INVISIBLE;
             }
         }
 

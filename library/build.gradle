@@ -35,7 +35,7 @@ publish {
     artifactId = 'StickyBubbleView' //项目名称
     publishVersion = '0.0.1' //版本号
     desc = '仿QQ未读消息拖拽删除粘性效果' //项目介绍
-    website = '' //项目主页
+    website = 'https://github.com/yuan1809/StickyBubbleView' //项目主页
 }
 
 

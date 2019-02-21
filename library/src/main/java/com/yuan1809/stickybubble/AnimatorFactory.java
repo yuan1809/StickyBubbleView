@@ -13,6 +13,8 @@ import android.view.animation.LinearInterpolator;
 
 /**
  * Created by yuanye on 2019/1/14.
+ * 所有StickyBubbleView共用一个AnimatorFactory
+ * 防止气泡爆炸动画重复引入
  */
 public class AnimatorFactory {
 
